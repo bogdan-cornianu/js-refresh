@@ -37,5 +37,5 @@ Node.js has two types of threads: one Event Loop and k Workers. The Event Loop i
 
 
 ## References:
-https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
-https://nodejs.org/en/docs/guides/dont-block-the-event-loop/
+    - https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
+    - https://nodejs.org/en/docs/guides/dont-block-the-event-loop/
