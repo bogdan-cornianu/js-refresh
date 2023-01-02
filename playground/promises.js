@@ -39,29 +39,3 @@ Promise.resolve('test')
     })
     .then(() => {console.log('fulfilled')}, () => {console.log('rejected')})
     .then(() => {console.log('second fulfilled')}, () => {console.log('second rejected')});
-
-// Promise.reject("No reason");
-
-
-// 3
-Promise.allSettled([
-    new Promise(resolve => {
-        resolve('One');
-    }),
-    new Promise(resolve => {
-        resolve('Two');
-    }),
-    new Promise(resolve => {
-        resolve('Three');
-    }),
-]).then(results => {
-    console.log(results.length);
-    console.log(results[0].status);
-    console.log(results[0].value);
-
-    console.log(results[1].status);
-    console.log(results[1].value);
-
-    console.log(results[2].status);
-    console.log(results[2].value);
-});
